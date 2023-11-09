@@ -1,15 +1,17 @@
 <template>
   <HeaderComponent />
-  <main>main</main>
+  <MainComponent />
   <footer>footer</footer>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   }
 }
 </script>
@@ -17,6 +19,6 @@ export default {
 <style lang="scss" scoped>
 main,
 footer {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 </style>
