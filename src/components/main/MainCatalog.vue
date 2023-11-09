@@ -63,6 +63,8 @@ export default {
     background-color: #0282f9;
     padding: 40px;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 10;
 }
 
 a {

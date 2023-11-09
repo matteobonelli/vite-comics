@@ -1,6 +1,6 @@
 <template>
     <section class="d-flex">
-        <div class="container my-4 d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <button class="btn text-uppercase">Sign-up Now!</button>
             <ul class="nav align-items-center">
                 <li class="text-uppercase nav-item me-4">Follow Us</li>
@@ -43,7 +43,9 @@ export default {
 <style lang="scss" scoped>
 section {
     background-color: #303030;
-    padding: 0, 35px;
+    padding: 35px 0px;
+    position: relative;
+    z-index: 10;
 
     .btn {
         color: white;

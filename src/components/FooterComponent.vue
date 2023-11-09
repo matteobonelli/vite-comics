@@ -1,9 +1,9 @@
 <template>
     <footer>
         <section class="dc-bg py-4">
-            <div class="container">
+            <div class="container d-flex justify-content-between align-items-center">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-4">
                         <h5 class="text-uppercase">Dc Comics</h5>
                         <ul>
                             <li v-for="(link, index) in dcComics" :key="index">
@@ -17,7 +17,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-1">
+                    <div class="col-4">
                         <h5 class="text-uppercase">Dc</h5>
                         <ul>
                             <li v-for="(link, index) in dc" :key="index">
@@ -25,7 +25,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-1">
+                    <div class="col-4">
                         <h5 class="text-uppercase">Sites</h5>
                         <ul>
                             <li v-for="(link, index) in sites" :key="index">
@@ -33,10 +33,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 align-self-end">
-                        <img src="../assets/images/dc-logo-bg.png" alt="dc-logo">
-                    </div>
                 </div>
+                <img src="../assets/images/dc-logo-bg.png" alt="logo-bg">
             </div>
         </section>
         <FollowUsComponent />
@@ -196,16 +194,19 @@ export default {
     background-size: cover;
 }
 
-.container {
-    position: relative;
-}
-
 h5 {
     color: white;
 }
 
+.container {
+    position: relative;
+}
+
 img {
-    background-size: cover;
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: 1;
 }
 
 ul {
