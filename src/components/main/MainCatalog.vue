@@ -62,6 +62,7 @@ export default {
 .catalog-bg {
     background-color: #0282f9;
     padding: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
