@@ -5,7 +5,7 @@
         <div class="container main-content">
             <button class="btn current-series text-uppercase">Current series</button>
             <div class="row mt-3">
-                <MainComics v-for="comic in comics" :thumb="comic.thumb" :series="comic.series" />
+                <MainComics v-for="comic, index in comics" :thumb="comic.thumb" :series="comic.series" :key="index" />
             </div>
             <div class="d-flex justify-content-center">
                 <button class="btn text-uppercase">Load more</button>

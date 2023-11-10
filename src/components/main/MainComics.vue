@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import '../data/dc-comics.json'
 export default {
     name: 'MainComics',
     props: {
