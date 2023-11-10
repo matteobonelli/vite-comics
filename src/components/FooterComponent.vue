@@ -217,6 +217,11 @@ ul {
         color: #959595;
         text-decoration: none;
         font-size: 12px;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
     }
 }
 </style>

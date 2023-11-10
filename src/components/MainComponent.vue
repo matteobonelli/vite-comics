@@ -1,7 +1,11 @@
 <template>
     <main>
+        <div class="jumbo-container">
+        </div>
         <div class="container main-content">
-            <h2>--> Content goes here &lt;-- </h2>
+            <div class="row">
+                <MainComics v-for="comic in comics" :thumb="comic.thumb" :series="comic.series" />
+            </div>
         </div>
         <MainCatalog />
     </main>
@@ -9,10 +13,18 @@
 
 <script>
 import MainCatalog from './main/MainCatalog.vue';
+import MainComics from './main/MainComics.vue'
+import { comicsList } from './data/data'
 export default {
     name: 'MainComponent',
     components: {
-        MainCatalog
+        MainCatalog,
+        MainComics
+    },
+    data() {
+        return {
+            comics: comicsList
+        }
     }
 }
 </script>
@@ -25,5 +37,14 @@ main {
     .main-content {
         padding: 40px;
     }
+
+    .jumbo-container {
+        height: 400px;
+        background-image: url('../assets/images/jumbotron.jpg')
+    }
+
+
+
+    ;
 }
 </style>
